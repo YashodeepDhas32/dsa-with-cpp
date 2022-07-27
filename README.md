@@ -1,2 +1,2 @@
-# dsa-with-cpp
-Data Structures and Algorithms using C++
+# its-just-dsa
+Data Structures and Algorithms at my own pace and mood !!!
