@@ -3,16 +3,15 @@
 '''
 
 def solution(arr):
-    max = 0
+    max_count = 0
     current_count = 0
     for i in range(0, len(arr)):
         if arr[i] == 1:
             current_count += 1
-            if max < current_count:
-                max = current_count
+            max_count = max(max_count, current_count)
         else:
             current_count = 0
-    return max
+    return max_count
 
 
 
