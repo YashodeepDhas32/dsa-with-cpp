@@ -3,6 +3,14 @@
     find the length of the longest Sub-Array with the sum of the elements equal to the given value k. 
 '''
 
+
+'''
+    intuition:
+    - Maintain running prefix sum to identify subarrays.
+    - Use a dictionary to store the first occurrence of each prefix sum.
+    - Check for target sum by comparing prefix sum and its difference with k.
+    - Store unique prefix sums to ensure the earliest occurrence.
+'''
 def solution(arr, k):
     max_len, prefix_sum, mp = 0, 0, dict()
 
