@@ -28,4 +28,4 @@ def solution(arr):
 
 if __name__ == '__main__':
     my_list = [2, 2, 3, 3, 1, 2, 2]
-    print(f"Majority element in list - {my_list}")
+    print(f"Majority element in list - {solution(my_list)}")
