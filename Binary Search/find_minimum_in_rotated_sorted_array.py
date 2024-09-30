@@ -27,10 +27,10 @@ def solution(arr):
         # check if left half is sorted and eliminate right half
         if arr[low] <= arr[mid]:
             mini = min(mini, arr[low])
-            high = mid - 1
-        else:
-            mini = min(mini, arr[mid])
             low = mid + 1
+        else:
+            mini = min(mini, arr[mid])            
+            high = mid - 1
         
     return mini
 
